@@ -1,6 +1,6 @@
 # Image Background Remover
 
-This project was bootstrapped with Create React App. The App is currently live: [https:/remover.com](https:/remover.com)
+This project was bootstrapped with Create React App. The App is currently live: [https:/remover.com](https://image-background-remover-app.netlify.app/)
 
 
 ## Welcome to the Image Background Remover Repository!
