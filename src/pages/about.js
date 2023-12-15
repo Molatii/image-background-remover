@@ -3,7 +3,6 @@ import Header from "../components/header";
 import { Container } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import AboutPic from "./../asserts/about.jpg";
-import Advertisement from "../components/advertisement";
 import "./../App.css";
 
 function About() {
@@ -12,8 +11,6 @@ function About() {
       <Header />
       <Container>
         <div className="p-4" style={{ marginTop: "140px" }}>
-          <Advertisement />
-          <hr />
           <Image
             className="mb-4  mx-auto d-block justify-content-center"
             alt="about-us-img"

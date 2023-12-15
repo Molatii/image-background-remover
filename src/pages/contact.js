@@ -1,7 +1,6 @@
 import Footer from "../components/footer";
 import Header from "../components/header";
 import { Container } from "react-bootstrap";
-import Advertisement from "../components/advertisement";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
@@ -15,8 +14,6 @@ function Contact() {
       <Header />
       <Container>
         <div className="p-4" style={{ marginTop: "140px" }}>
-          <Advertisement />
-          <hr />
           <Image
             style={{ width: "100%", height: "300px" }}
             className="mb-4"

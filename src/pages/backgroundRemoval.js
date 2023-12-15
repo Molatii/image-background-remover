@@ -1,7 +1,6 @@
 import Header from "../components/header";
 import { Container } from "react-bootstrap";
 import Footer from "../components/footer";
-import Advertisement from "./../components/advertisement";
 import "./../App.css";
 import { useState } from "react";
 import UploadImg from "../components/backgroundRemoval/uploadImg";
@@ -18,8 +17,6 @@ const handleButtonClick = (nextStage) => {
       <Header />
       <Container>
         <div className="p-4" style={{ marginTop: "140px", marginBottom: "140px" }}>
-          <Advertisement />
-          <hr />
           <h3 className="h3-highlight">Remove Background</h3>
           {stage === "upload" && <UploadImg btnAction={handleButtonClick} />}
 
