@@ -1,6 +1,7 @@
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import Advertisement from "./advertisement";
+import Image from "react-bootstrap/Image";
+import emoji from "./../asserts/emoji.png"
 
 export const EraserModal = (props) => {
   return (
@@ -19,7 +20,13 @@ export const EraserModal = (props) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Advertisement />
+        <Image
+          className="mx-auto d-block justify-content-center"
+          alt="about-us-img"
+          src={emoji}
+          fluid
+          style={{ width: "35%", height: "150px" }}
+        />
       </Modal.Body>
       <Modal.Footer className="justify-content-center mx-auto d-block">
         <Button
