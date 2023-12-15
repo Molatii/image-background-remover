@@ -1,0 +1,9 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.h3-highlight{
+    color: rgb(140, 77, 249);
+    font-weight: bolder;
+    text-shadow: 15px;
+    transition: 0.4s ease;
+    margin-bottom: 30px;
+}

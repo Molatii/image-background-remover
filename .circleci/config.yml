@@ -1,0 +1,38 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:14
+
+    working_directory: ~/app
+
+    steps:
+      - checkout
+
+      # Restore cached node modules to speed up build
+      - restore_cache:
+          key: npm-cache-{{ checksum "package-lock.json" }}
+
+      - run:
+          name: Install Dependencies
+          command: npm install
+
+      # Save node modules for future builds
+      - save_cache:
+          key: npm-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
+
+      # Your build/test commands go here
+      - run:
+          name: Run Tests
+          command: npm test
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build
+    
+ 
